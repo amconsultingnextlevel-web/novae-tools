@@ -10,8 +10,10 @@ export default function SelectorPage() {
           padding:16, background:"#fff", border:`1px solid var(--aluma-border)`, borderRadius:16
         }}>
           <div style={{ display:"flex", gap:12, alignItems:"center" }}>
-            <Image src="/aluma-logo.jpg" alt="Aluma" width={160} height={40} priority />
-            <div>
+            <Image   src="/novae-logo.png"
+  alt="Novae Trailers"
+  style={{ height: 38, width: "auto" }}
+/>
               <div style={{ fontWeight:800, color:"var(--aluma-charcoal)" }}>Trailer Selector</div>
               <div style={{ fontSize:13, color:"#6B7280" }}>Answer a few questions. Get a best-fit starting point.</div>
             </div>

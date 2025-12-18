@@ -20,11 +20,11 @@ export default function CalculatorPage() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img
-              src="/aluma-logo.jpg"
-              alt="Aluma Trailers"
-              style={{ height: 38, width: "auto" }}
-            />
+           <img
+  src="/novae-logo.png"
+  alt="Novae Trailers"
+  style={{ height: 38, width: "auto" }}
+/>
             <div>
               <div style={{ fontWeight: 800, color: "#3C3C3E" }}>
                 Total Cost of Ownership
