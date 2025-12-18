@@ -3,31 +3,53 @@ import TrailerSelectionSystem from "../components/TrailerSelectionSystem";
 
 export default function SelectorPage() {
   return (
-    <div style={{ background: "var(--aluma-bg)", minHeight: "100vh" }}>
+    <div style={{ background: "#F9FAFB", minHeight: "100vh" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
-        <header style={{
-          display:"flex", alignItems:"center", justifyContent:"space-between",
-          padding:16, background:"#fff", border:`1px solid var(--aluma-border)`, borderRadius:16
-        }}>
-          <div style={{ display:"flex", gap:12, alignItems:"center" }}>
-            <Image   src="/novae-logo.png"
-  alt="Novae Trailers"
-  style={{ height: 38, width: "auto" }}
-/>
-              <div style={{ fontWeight:800, color:"var(--aluma-charcoal)" }}>Trailer Selector</div>
-              <div style={{ fontSize:13, color:"#6B7280" }}>Answer a few questions. Get a best-fit starting point.</div>
+        <header
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 16,
+            padding: "14px 18px",
+            background: "#FFFFFF",
+            border: "1px solid #E5E7EB",
+            borderRadius: 16,
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <img
+              src="/novae-logo.png"
+              alt="Novae Trailers"
+              style={{ height: 38, width: "auto" }}
+            />
+            <div>
+              <div style={{ fontWeight: 800, color: "#111827" }}>
+                Trailer Selector
+              </div>
+              <div style={{ fontSize: 13, color: "#6B7280" }}>
+                Answer a few questions. Get a best-fit starting point.
+              </div>
             </div>
           </div>
 
-          <a href="/calculator" style={{
-            background:"var(--aluma-yellow)", color:"#000", fontWeight:800,
-            padding:"10px 14px", borderRadius:12, textDecoration:"none"
-          }}>
+          <a
+            href="/calculator"
+            style={{
+              background: "#F97316",
+              color: "#000",
+              fontWeight: 800,
+              padding: "10px 14px",
+              borderRadius: 12,
+              textDecoration: "none",
+              border: "1px solid rgba(0,0,0,0.1)",
+            }}
+          >
             Compare Total Cost
           </a>
         </header>
 
-        <div style={{ marginTop:18 }}>
+        <div style={{ marginTop: 18 }}>
           <TrailerSelectionSystem />
         </div>
       </div>
