@@ -1,4 +1,3 @@
-import Image from "next/image";
 import TrailerSelectionSystem from "../components/TrailerSelectionSystem";
 
 export default function SelectorPage() {
@@ -24,12 +23,12 @@ export default function SelectorPage() {
               style={{ height: 38, width: "auto" }}
             />
             <div>
-              <div style={{ fontWeight: 800, color: "#111827" }}>
-                Trailer Selector
-              </div>
-              <div style={{ fontSize: 13, color: "#6B7280" }}>
-                Answer a few questions. Get a best-fit starting point.
-              </div>
+          <div style={{ fontWeight: 800, color: "#111827" }}>
+          Trailer Finder
+        </div>
+        <div style={{ fontSize: 13, color: "#6B7280" }}>
+        Answer a few questions. We’ll recommend the best trailer type and material fit.
+      </div>
             </div>
           </div>
 
