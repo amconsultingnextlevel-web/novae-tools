@@ -782,6 +782,8 @@ const TrailerSelectionSystem = () => {
               </p>
 
               {/* ✅ FIXED: use styled <a> (no button inside anchor) */}
+{/* DEPLOY-FINGERPRINT: CTA-LINK-2025-12-29 */}
+
               <a
                 href="https://app.christianbusinessentrepreneur.com/v2/preview/Urf6oVVTJKH1icODwuSo?notrack=true"
                 target="_blank"
