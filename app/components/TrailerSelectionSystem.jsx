@@ -776,21 +776,29 @@ const TrailerSelectionSystem = () => {
               <p style={{ fontSize: "15px", color: "#666", margin: "0 0 24px 0" }}>
                 Check availability with a local dealer near you.
               </p>
-              <button
-                style={{
-                  padding: "16px 32px",
-                  background: "linear-gradient(135deg, #d97706 0%, #b45309 100%)",
-                  border: "none",
-                  borderRadius: "8px",
-                  fontSize: "15px",
-                  fontWeight: "600",
-                  color: "#fff",
-                  cursor: "pointer",
-                  marginRight: "12px",
-                }}
-              >
-                Find Local Availability
-              </button>
+<a
+  href="https://app.christianbusinessentrepreneur.com/v2/preview/Urf6oVVTJKH1icODwuSo?notrack=true"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none" }}
+>
+  <button
+    style={{
+      padding: "16px 32px",
+      background: "linear-gradient(135deg, #d97706 0%, #b45309 100%)",
+      border: "none",
+      borderRadius: "8px",
+      fontSize: "15px",
+      fontWeight: "600",
+      color: "#fff",
+      cursor: "pointer",
+      marginRight: "12px",
+    }}
+  >
+    Find Local Availability
+  </button>
+</a>
+
               <button
                 onClick={handleReset}
                 style={{
