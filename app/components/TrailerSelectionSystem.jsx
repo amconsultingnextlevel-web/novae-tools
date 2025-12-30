@@ -441,6 +441,7 @@ const TrailerSelectionSystem = () => {
 
           {(step > 0 || showResults) && (
             <button
+              type="button"
               onClick={handleReset}
               style={{
                 padding: "8px 16px",
@@ -513,6 +514,7 @@ const TrailerSelectionSystem = () => {
 
                 return (
                   <button
+                    type="button"
                     key={option.value}
                     onClick={() => handleSelect(currentQuestion.id, option.value)}
                     style={{
@@ -560,6 +562,7 @@ const TrailerSelectionSystem = () => {
             <div style={{ display: "flex", gap: "12px" }}>
               {step > 0 && (
                 <button
+                  type="button"
                   onClick={handleBack}
                   style={{
                     padding: "14px 24px",
@@ -576,6 +579,7 @@ const TrailerSelectionSystem = () => {
               )}
 
               <button
+                type="button"
                 onClick={handleNext}
                 disabled={!isAnswered}
                 style={{
@@ -776,30 +780,31 @@ const TrailerSelectionSystem = () => {
               <p style={{ fontSize: "15px", color: "#666", margin: "0 0 24px 0" }}>
                 Check availability with a local dealer near you.
               </p>
-<a
-  href="https://app.christianbusinessentrepreneur.com/v2/preview/Urf6oVVTJKH1icODwuSo?notrack=true"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ textDecoration: "none" }}
->
-  <button
-    style={{
-      padding: "16px 32px",
-      background: "linear-gradient(135deg, #d97706 0%, #b45309 100%)",
-      border: "none",
-      borderRadius: "8px",
-      fontSize: "15px",
-      fontWeight: "600",
-      color: "#fff",
-      cursor: "pointer",
-      marginRight: "12px",
-    }}
-  >
-    Find Local Availability
-  </button>
-</a>
+
+              {/* ✅ FIXED: use styled <a> (no button inside anchor) */}
+              <a
+                href="https://app.christianbusinessentrepreneur.com/v2/preview/Urf6oVVTJKH1icODwuSo?notrack=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "16px 32px",
+                  background: "linear-gradient(135deg, #d97706 0%, #b45309 100%)",
+                  borderRadius: "8px",
+                  fontSize: "15px",
+                  fontWeight: "600",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "12px",
+                  textDecoration: "none",
+                  border: "none",
+                }}
+              >
+                Find Local Availability
+              </a>
 
               <button
+                type="button"
                 onClick={handleReset}
                 style={{
                   padding: "16px 24px",
@@ -859,3 +864,4 @@ const TrailerSelectionSystem = () => {
 };
 
 export default TrailerSelectionSystem;
+
